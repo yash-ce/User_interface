@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-34dp">
+
+
+        <ImageView
+            android:id="@+id/cake_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/friend" />
+
+        <TextView
+            android:id="@+id/From_yash_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginLeft="89dp"
+            android:layout_marginBottom="62dp"
+
+            android:layout_toRightOf="@id/HBD_text_view"
+            android:rotation="-17"
+            android:rotationX="12"
+            android:text="From, Yash"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#4689C8" />
+
+        <EditText
+            android:id="@+id/album_description_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:hint="Yash/type_here"
+            android:inputType="textMultiLine" />
+
+
+
+
+        <TextView
+            android:id="@+id/HBD_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4689C8"
+            android:text="Happy Birthday Dear"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp"
+            android:max="100"
+            android:progress="80" />
+
+        <TextView
+            android:id="@+id/Yash_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HBD_text_view"
+            android:rotation="-4"
+            android:rotationX="360"
+            android:rotationY="25"
+            android:text="#KVN"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#4689C8"
+            android:textStyle="bold"
+            tools:visibility="visible" />
+
+
+        <Spinner
+            android:id="@+id/sort_by_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
